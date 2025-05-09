@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kids Language Translator</title>
-    <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <h1>🌍 Kids Language Translator</h1>
-        
+
         <div class="translator-box">
             <div class="input-section">
                 <label for="english-word">English Word:</label>
-                <input type="text" id="english-word" placeholder="Enter an English word">
+                <input type="text" id="english-word" placeholder="Enter an English word" />
                 <button id="translate-btn">Translate!</button>
             </div>
-            
+
+            <div id="loading" class="loading" style="display: none;">Translating...</div>
+
             <div class="results">
-                <div class="language-card">
-                    <h2>Yoruba</h2>
-                    <p id="yoruba-result">Translation will appear here</p>
-                </div>
-                
-                <div class="language-card">
-                    <h2>Hausa</h2>
-                    <p id="hausa-result">Translation will appear here</p>
-                </div>
-                
-                <div class="language-card">
-                    <h2>Igbo</h2>
-                    <p id="igbo-result">Translation will appear here</p>
-                </div>
+                <div class="language-card"><h2>Yoruba</h2><p id="yoruba-result">Translation will appear here</p></div>
+                <div class="language-card"><h2>Hausa</h2><p id="hausa-result">Translation will appear here</p></div>
+                <div class="language-card"><h2>Igbo</h2><p id="igbo-result">Translation will appear here</p></div>
             </div>
         </div>
-        
+
         <div class="word-bank">
             <h3>Try these words:</h3>
             <div class="word-chips">
